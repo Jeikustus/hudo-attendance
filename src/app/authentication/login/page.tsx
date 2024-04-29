@@ -39,7 +39,7 @@ const LoginPage = () => {
 
         const accountStatus = userData.userAccountStatus;
         if (accountStatus === "Pending") {
-          window.location.href = "/authentication/account/pending";
+          window.location.href = "/authentication/thankyou";
         } else if (accountStatus === "Declined") {
           window.location.href = "/authentication/account/declined-account";
         } else if (accountStatus === "Approved") {
