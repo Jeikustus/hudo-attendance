@@ -53,6 +53,7 @@ export const signInWithEmailAndPassword = async (userEmail: string, userPassword
     const userCredential = await signInWithEmailAndPasswordFirebase(conAuth, userEmail, userPassword);
     return userCredential.user;
   } catch (error) {
+    alert(error);
     throw error;
   }
 };
